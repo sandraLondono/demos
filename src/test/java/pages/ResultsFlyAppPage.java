@@ -24,7 +24,7 @@ public class ResultsFlyAppPage extends BasePage {
 
     public List<WebElement> resultsImg(String fly){
         Allure.step("Obtener resultados de la busqueda");
-        ScreenshotUtils.captureScreenshot(driver);
+        ScreenshotUtils.captureScreenshot(driver, "results");
         By locator = By.xpath(String.format("//*[contains(@content-desc, '%s')]", fly));
         new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElements(locator);

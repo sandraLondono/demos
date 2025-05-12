@@ -36,7 +36,7 @@ public class LoginAppPage extends BasePage {
 
     public Boolean getErrorMessage() {
         Allure.step("validar msg de error");
-        ScreenshotUtils.captureScreenshot(driver);
+        ScreenshotUtils.captureScreenshot(driver, "msg error");
         return errorMessage.isDisplayed();
     }
 
