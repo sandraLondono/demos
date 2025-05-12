@@ -1,0 +1,33 @@
+{
+  "uuid": "5df498a5-a04a-4977-b425-3ed14ebb0ae2",
+  "name": "testSearchFunctionality()",
+  "children": [
+    "a854f614-c523-4066-9d62-fc31d79343da"
+  ],
+  "befores": [
+    {
+      "name": "setUpTest",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746923848249,
+      "stop": 1746923855429
+    }
+  ],
+  "afters": [
+    {
+      "name": "tearDownTest",
+      "status": "passed",
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1746923869771,
+      "stop": 1746923870288
+    }
+  ],
+  "start": 1746923843190,
+  "stop": 1746923870343
+}
