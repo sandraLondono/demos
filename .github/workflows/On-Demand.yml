@@ -74,16 +74,7 @@ jobs:
         run: ${{ github.event.inputs.parametros }}
 
       - name: Verificar archivos antes de subir reportes
+        if: always()
         run: |
           ls -R
 
-      - name: Subir reportes de pruebas
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: reporte-${{ github.event.inputs.tipo_de_prueba }}
-          path: |
-            restassured/build/reports
-            build/reports/gatling
-            report/
-            appium/build/reports
