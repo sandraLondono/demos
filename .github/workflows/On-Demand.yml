@@ -35,7 +35,6 @@ jobs:
         with:
           ref: ${{ github.event.inputs.branch }}
 
-      
       - name: Configurar JDK
         uses: actions/setup-java@v3
         with:
@@ -55,6 +54,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y python3-pip
           pip install locust
+
+      - name: validar comando 
+        if: always()
+        run: echo ${{ github.event.inputs.parametros }}
 
       - name: Ejecutar pruebas Rest-Assured
         if: ${{ github.event.inputs.tipo_de_prueba == 'rest-assured' }}
