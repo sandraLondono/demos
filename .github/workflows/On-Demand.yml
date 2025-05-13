@@ -81,7 +81,7 @@ jobs:
 
       - name: Subir reportes de pruebas
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: reporte-${{ github.event.inputs.tipo_de_prueba }}
           path: |
