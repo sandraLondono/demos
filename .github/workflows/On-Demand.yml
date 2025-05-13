@@ -86,4 +86,6 @@ jobs:
           name: reporte-${{ github.event.inputs.tipo_de_prueba }}
           path: |
             build/reports
+            report
+            
 
