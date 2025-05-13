@@ -1,0 +1,59 @@
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.2.1"
+    id 'java'
+    id "io.freefair.lombok" version "8.10.2"
+}
+
+group = 'com.fisagrp'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    SERENITY_VERSION = '4.2.1'
+    JUNIT_PLATFORM_VERSION = '1.10.2'
+    CUCUMBER_JUNIT_PLATFORM_VERSION = '7.19.0'
+    JUNIT_JUPITER_VERSION = '5.11.0'
+    JUNIT_VINTAGE_VERSION = '5.11.0'
+    LOGBACK_CLASSIC_VERSION = '1.5.6'
+    ASSERTJ_CORE_VERSION = '3.26.3'
+    LOMBOK_VERSION = '1.18.32'
+    VAR_VERSION = "0.10.3"
+}
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-core:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-rest-assured:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-junit:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-junit5:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-screenplay:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-ensure:${SERENITY_VERSION}"
+    implementation "net.serenity-bdd:serenity-cucumber:${SERENITY_VERSION}"
+    implementation "ch.qos.logback:logback-classic:${LOGBACK_CLASSIC_VERSION}"
+    implementation "org.assertj:assertj-core:${ASSERTJ_CORE_VERSION}"
+    testImplementation "org.junit.platform:junit-platform-launcher:${JUNIT_PLATFORM_VERSION}"
+    testImplementation "io.cucumber:cucumber-junit-platform-engine:${CUCUMBER_JUNIT_PLATFORM_VERSION}"
+    testImplementation "org.junit.platform:junit-platform-suite:${JUNIT_PLATFORM_VERSION}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${JUNIT_JUPITER_VERSION}"
+    testImplementation "org.junit.vintage:junit-vintage-engine:${JUNIT_VINTAGE_VERSION}"
+    testImplementation "net.serenity-bdd:serenity-saucelabs:${SERENITY_VERSION}"
+    compileOnly "org.projectlombok:lombok:${LOMBOK_VERSION}"
+    annotationProcessor "org.projectlombok:${LOMBOK_VERSION}"
+    implementation "io.vavr:vavr:${VAR_VERSION}"
+    implementation("com.jayway.jsonpath:json-path:2.9.0")
+
+
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'environment', System.properties['environment']
+    systemProperty 'cucumber.filter.tags', System.properties['cucumber.filter.tags']
+}
+
+
+test.finalizedBy(aggregate)
