@@ -1,0 +1,81 @@
+name: On-Demand QA Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Rama a ejecutar'
+        required: true
+        default: 'main'
+      tipo_de_prueba:
+        description: 'Tipo de prueba a ejecutar'
+        required: true
+        default: 'rest-assured'
+        type: choice
+        options:
+          - rest-assured
+          - gatling
+          - locust
+          - appium
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - name: Configurar JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Instalar dependencias con Gradle
+        if: >-
+          github.event.inputs.tipo_de_prueba == 'rest-assured' ||
+          github.event.inputs.tipo_de_prueba == 'gatling' ||
+          github.event.inputs.tipo_de_prueba == 'appium'
+        run: ./gradlew build --no-daemon
+
+      - name: Instalar dependencias para Locust
+        if: ${{ github.event.inputs.tipo_de_prueba == 'locust' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip install locust
+
+      - name: Ejecutar pruebas Rest-Assured
+        if: ${{ github.event.inputs.tipo_de_prueba == 'rest-assured' }}
+        run: ${{ github.event.inputs.parametros }}
+
+      - name: Ejecutar pruebas Gatling
+        if: ${{ github.event.inputs.tipo_de_prueba == 'gatling' }}
+        run: ${{ github.event.inputs.parametros }}
+
+      - name: Ejecutar pruebas Locust
+        if: ${{ github.event.inputs.tipo_de_prueba == 'locust' }}
+        run: |
+          cd locust
+          ${{ github.event.inputs.parametros }}
+
+      - name: Ejecutar pruebas Appium
+        if: ${{ github.event.inputs.tipo_de_prueba == 'appium' }}
+        run: ${{ github.event.inputs.parametros }}
+
+      - name: Subir reportes de pruebas
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: reporte-${{ github.event.inputs.tipo_de_prueba }}
+          path: |
+            restassured/build/reports
+            gatling/results
+            locust/report
+            appium/build/reports
