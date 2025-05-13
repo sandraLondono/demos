@@ -73,6 +73,10 @@ jobs:
         if: ${{ github.event.inputs.tipo_de_prueba == 'appium' }}
         run: ${{ github.event.inputs.parametros }}
 
+      - name: Verificar archivos antes de subir reportes
+        run: |
+          ls -R
+
       - name: Subir reportes de pruebas
         if: always()
         uses: actions/upload-artifact@v3
