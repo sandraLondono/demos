@@ -39,9 +39,8 @@ jobs:
       - name: Configurar JDK
         uses: actions/setup-java@v3
         with:
-          distribution: 'jetbrains'
+          distribution: 'temurin'
           java-version: '17'
-          java-package: 'jdk'
 
       - name: Instalar dependencias con Gradle
         if: >-
