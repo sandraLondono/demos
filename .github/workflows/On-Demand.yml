@@ -65,9 +65,7 @@ jobs:
 
       - name: Ejecutar pruebas Locust
         if: ${{ github.event.inputs.tipo_de_prueba == 'locust' }}
-        run: |
-          cd locust
-          ${{ github.event.inputs.parametros }}
+        run: ${{ github.event.inputs.parametros }}
 
       - name: Ejecutar pruebas Appium
         if: ${{ github.event.inputs.tipo_de_prueba == 'appium' }}
