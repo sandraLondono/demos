@@ -35,11 +35,13 @@ jobs:
         with:
           ref: ${{ github.event.inputs.branch }}
 
+      
       - name: Configurar JDK
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: 'jetbrains'
           java-version: '17'
+          java-package: 'jdk'
 
       - name: Instalar dependencias con Gradle
         if: >-
