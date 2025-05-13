@@ -80,6 +80,6 @@ jobs:
           name: reporte-${{ github.event.inputs.tipo_de_prueba }}
           path: |
             restassured/build/reports
-            gatling/results
-            locust/report
+            build/reports/gatling
+            report/
             appium/build/reports
