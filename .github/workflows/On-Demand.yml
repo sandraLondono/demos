@@ -19,8 +19,7 @@ on:
           - appium
       comando:
         description: 'comando de ejecucion de la prueba'
-        required: false
-        default: ''
+        required: true
 
 jobs:
   run-tests:
