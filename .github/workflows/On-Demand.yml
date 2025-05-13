@@ -17,6 +17,10 @@ on:
           - gatling
           - locust
           - appium
+      comando:
+        description: 'comando de ejecucion de la prueba'
+        required: false
+        default: ''
 
 jobs:
   run-tests:
