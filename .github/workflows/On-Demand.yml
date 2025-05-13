@@ -85,8 +85,5 @@ jobs:
         with:
           name: reporte-${{ github.event.inputs.tipo_de_prueba }}
           path: |
-            restassured/build/reports
-            build/reports/gatling
-            report/
-            appium/build/reports
+            build/reports
 
