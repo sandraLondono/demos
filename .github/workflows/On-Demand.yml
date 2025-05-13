@@ -56,23 +56,23 @@ jobs:
 
       - name: validar comando 
         if: always()
-        run: echo ${{ github.event.inputs.parametros }}
+        run: echo ${{ github.event.inputs.comando }}
 
       - name: Ejecutar pruebas Rest-Assured
         if: ${{ github.event.inputs.tipo_de_prueba == 'rest-assured' }}
-        run: ${{ github.event.inputs.parametros }}
+        run: ${{ github.event.inputs.comando }}
 
       - name: Ejecutar pruebas Gatling
         if: ${{ github.event.inputs.tipo_de_prueba == 'gatling' }}
-        run: ${{ github.event.inputs.parametros }}
+        run: ${{ github.event.inputs.comando }}
 
       - name: Ejecutar pruebas Locust
         if: ${{ github.event.inputs.tipo_de_prueba == 'locust' }}
-        run: ${{ github.event.inputs.parametros }}
+        run: ${{ github.event.inputs.comando }}
 
       - name: Ejecutar pruebas Appium
         if: ${{ github.event.inputs.tipo_de_prueba == 'appium' }}
-        run: ${{ github.event.inputs.parametros }}
+        run: ${{ github.event.inputs.comando }}
 
       - name: Verificar archivos antes de subir reportes
         if: always()
