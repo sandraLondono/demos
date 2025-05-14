@@ -21,6 +21,9 @@ ext {
     ASSERTJ_CORE_VERSION = '3.26.3'
     LOMBOK_VERSION = '1.18.32'
     VAR_VERSION = "0.10.3"
+    JSON_PATH = "2.9.0"
+    ZAP_VERSION = "1.16.0"
+
 }
 
 dependencies {
@@ -44,7 +47,9 @@ dependencies {
     compileOnly "org.projectlombok:lombok:${LOMBOK_VERSION}"
     annotationProcessor "org.projectlombok:${LOMBOK_VERSION}"
     implementation "io.vavr:vavr:${VAR_VERSION}"
-    implementation("com.jayway.jsonpath:json-path:2.9.0")
+    implementation("com.jayway.jsonpath:json-path:${JSON_PATH}")
+
+    implementation "org.zaproxy:zap-clientapi:${ZAP_VERSION}"
 
 
 }
