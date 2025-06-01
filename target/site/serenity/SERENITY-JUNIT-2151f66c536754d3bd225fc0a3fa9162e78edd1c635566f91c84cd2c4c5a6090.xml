@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="2" failures="0" name="get device info by service" skipped="0" tests="3" time="590.38" timestamp="2025-05-15 04:12:09"><testcase name="get info"><error message="The validation dont works with name property - &#10;Expected: a string containing &quot;Apple MacBook Pro 16&quot;&#10;     but: was null" type="exeptions.ValidationFailedException">The validation dont works with name property - 
+Expected: a string containing "Apple MacBook Pro 16"
+     but: was null</error><system-err>The validation dont works with name property - 
+Expected: a string containing "Apple MacBook Pro 16"
+     but: was null
+stepdefinitions.MobileDeviceStepDefinitions.iCanValidateResponse(MobileDeviceStepDefinitions.java:65)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</system-err></testcase><testcase name="get all info"/></testsuite>
