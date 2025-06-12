@@ -33,8 +33,3 @@ Thumbs.db
 
 # Ambiente y secretos
 .env
-.env.*
-
-
-# Cache de Cypress
-.cache/
