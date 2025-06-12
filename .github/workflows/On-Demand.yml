@@ -97,7 +97,7 @@ jobs:
       - name: Generar reporte Allure (Cypress)
         if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
         run: |
-          npm report allure:report
+          npm run allure:report
 
       - name: Subir reportes de pruebas
         if: always()
