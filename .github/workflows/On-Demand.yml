@@ -17,6 +17,7 @@ on:
           - gatling
           - locust
           - appium
+          - cypress
       comando:
         description: 'comando de ejecucion de la prueba'
         required: true
@@ -54,6 +55,16 @@ jobs:
           sudo apt-get install -y python3-pip
           pip install -r requirements.txt
 
+      - name: Instalar dependencias para Cypress
+        if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar Cypress
+        if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
+        run: npm ci
+
       - name: validar comando 
         if: always()
         run: echo ${{ github.event.inputs.comando }}
@@ -74,6 +85,10 @@ jobs:
         if: ${{ github.event.inputs.tipo_de_prueba == 'appium' }}
         run: ${{ github.event.inputs.comando }}
 
+      - name: Ejecutar pruebas Cypress
+        if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
+        run: ${{ github.event.inputs.comando }}
+
       - name: Verificar archivos antes de subir reportes
         if: always()
         run: |
@@ -88,5 +103,9 @@ jobs:
             build/reports
             report
             target/site
+            cypress/reports
+            cypress/screenshots
+            cypress/videos
+            allure-report
             
 
