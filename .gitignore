@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios de Cypress (videos, screenshots, reportes temporales)
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Resultados de Allure (se pueden regenerar)
+allure-results/
+allure-report/
+
+# Reportes de cobertura de código (si usás nyc o coverage tools)
+coverage/
+
+# Archivos de sistema o editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Ambiente y secretos
+.env
+.env.*
+
+
+# Cache de Cypress
+.cache/

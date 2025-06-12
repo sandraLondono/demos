@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Que tipos de transacciones puedes hacer con Yape",
+    "expected": "¿Qué tipos de transacciones puedes hacer con Yape?"
+  },
+  {
+    "question": "¿Que tipo de negocios pueden usar Yape?",
+    "expected": "¿Qué tipo de negocios pueden usar Yape?"
+  },
+  {
+    "question": "¿Con que tipo de celular puedo utilizar Yape?",
+    "expected": "¿Con qué tipo de celular puedo utilizar Yape?"
+  }
+]
