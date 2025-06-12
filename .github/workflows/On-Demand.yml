@@ -112,5 +112,5 @@ jobs:
             cypress/screenshots
             cypress/videos
             allure-report
-            
+            allure-results
 
