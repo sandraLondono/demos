@@ -65,6 +65,11 @@ jobs:
         if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
         run: npm ci
 
+      - name: Instalar Allure CLI
+        if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
+        run: |
+          npm install -g allure-commandline --save-dev
+
       - name: validar comando 
         if: always()
         run: echo ${{ github.event.inputs.comando }}
@@ -89,10 +94,10 @@ jobs:
         if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
         run: ${{ github.event.inputs.comando }}
 
-      - name: Verificar archivos antes de subir reportes
-        if: always()
+      - name: Generar reporte Allure (Cypress)
+        if: ${{ github.event.inputs.tipo_de_prueba == 'cypress' }}
         run: |
-          ls -R
+          npm report allure:report
 
       - name: Subir reportes de pruebas
         if: always()
