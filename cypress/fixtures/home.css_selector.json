@@ -1,0 +1,187 @@
+[
+    {
+        "selector": "a[href=\"https://onelink.to/xurcbr\"]",
+        "href": "https://onelink.to/xurcbr"
+    },
+    {
+        "selector": "#inicio_yape",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/"
+    },
+    {
+        "selector": "#menu_negocio",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/yapenegocios/"
+    },
+    {
+        "selector": "#menu_recargas",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/productos/recargas/"
+    },
+    {
+        "selector": "#menu_depositayretira",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/productos/depositayretira/"
+    },
+    {
+        "selector": "#menu_pagoservicios",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/productos/pagoservicios"
+    },
+    {
+        "selector": "#menu_yapeos",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/productos/yapeos"
+    },
+    {
+        "selector": "#menu_promociones",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/productos/promos/"
+    },
+    {
+        "selector": "#menu_seguridad",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/seguridad/"
+    },
+    {
+        "selector": "#menu_blog",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/blog/"
+    },
+    {
+        "selector": "#menu_ayuda_movil",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/centro_de_ayuda/"
+    },
+    {
+        "selector": "#menu_ayuda",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/centro_de_ayuda/"
+    },
+    {
+        "selector": "#banner2",
+        "href": "productos/recargas"
+    },
+    {
+        "selector": "#banner3",
+        "href": "centro_de_ayuda/retirar-dinero-de-yape/como-puedo-retirar-dinero-de-los-agentes-bcp/#como-puedo-retirar-dinero-de-los-agentes-bcp"
+    },
+    {
+        "selector": "#banner4",
+        "href": "centro_de_ayuda/enviar-y-recibir-yapeos/que-significa-yapear-entre-yaperos-o-enviar-a-otro-yape/#que-significa-yapear-entre-yaperos-o-enviar-a-otro-yape"
+    },
+    {
+        "selector": "#banner5",
+        "href": "seguridad/"
+    },
+    {
+        "selector": "#banner6",
+        "href": "yapenegocios/"
+    },
+    {
+        "selector": "a[href=\"productos/recargas/\"]",
+        "href": "productos/recargas/"
+    },
+    {
+        "selector": "a[href=\"productos/pagoservicios/\"]",
+        "href": "productos/pagoservicios/"
+    },
+    {
+        "selector": "a[href=\"productos/depositayretira/\"]",
+        "href": "productos/depositayretira/"
+    },
+    {
+        "selector": "a[href=\"productos/promos/\"]",
+        "href": "productos/promos/"
+    },
+    {
+        "selector": "#conoce_mas_aqui_impuestos",
+        "href": "productos/pagoservicios"
+    },
+    {
+        "selector": "#ir_al_centro_ayuda",
+        "href": "/centro_de_ayuda/"
+    },
+    {
+        "selector": "#que_hago_en_caso_de_perdida_o_robo_del_celular",
+        "href": "centro_de_ayuda/temas-urgentes/que-hago-en-caso-de-perdida-o-robo-de-celular/#que-hago-en-caso-de-perdida-o-robo-de-celular"
+    },
+    {
+        "selector": "#cambie_de_celular_y_no_puedo_acceder_a_Yape",
+        "href": "centro_de_ayuda/temas-urgentes/cambie-de-celular-y-no-puedo-acceder-a-yape/#cambie-de-celular-y-no-puedo-acceder-a-yape"
+    },
+    {
+        "selector": "#como_me_creo_mi_cuenta_en_Yape",
+        "href": "centro_de_ayuda/crear-tu-cuenta-yape/como-me-creo-mi-cuenta-en-yape/#como-me-creo-mi-cuenta-en-yape"
+    },
+    {
+        "selector": "#yapea_a_tu_contacto_pregunta_frecuente",
+        "href": "/centro_de_ayuda/"
+    },
+    {
+        "selector": "#descarga_iphone_soliprincipal_banner1",
+        "href": "https://apps.apple.com/es/app/soli-pagos-bcp/id1135987447"
+    },
+    {
+        "selector": "#descarga_android_soliprincipal_banner1",
+        "href": "https://play.google.com/store/apps/details?id=com.bcp.bo.wallet&referrer=utm_source%3Dp%25C3%25A1gina_web%26utm_medium%3Dp%25C3%25A1gina_web%26utm_term%3Dp%25C3%25A1gina_web%26utm_content%3Dp%25C3%25A1gina_web%26utm_campaign%3Dp%25C3%25A1gina_web"
+    },
+    {
+        "selector": "a[href=\"index.html\"]",
+        "href": "index.html"
+    },
+    {
+        "selector": "a[href=\"https://www99.bancred.com.bo/yape.com.bo/legales/YAPE_BCP_CONTRACT.pdf\"]",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/legales/YAPE_BCP_CONTRACT.pdf"
+    },
+    {
+        "selector": "a[href=\"https://www99.bancred.com.bo/yape.com.bo/legales/YAPE_BCP_CONTRACT.pdf\"]",
+        "href": "https://www99.bancred.com.bo/yape.com.bo/legales/YAPE_BCP_CONTRACT.pdf"
+    },
+    {
+        "selector": "a[href=\"https://www.facebook.com/yapebolivia\"]",
+        "href": "https://www.facebook.com/yapebolivia"
+    },
+    {
+        "selector": "a[href=\"https://www.instagram.com/yapebolivia\"]",
+        "href": "https://www.instagram.com/yapebolivia"
+    },
+    {
+        "selector": "a[href=\"https://www.youtube.com/@yapebolivia\"]",
+        "href": "https://www.youtube.com/@yapebolivia"
+    },
+    {
+        "selector": "a[href=\"https://www.tiktok.com/@yapebolivia\"]",
+        "href": "https://www.tiktok.com/@yapebolivia"
+    },
+    {
+        "selector": "#descarga_android_soliprincipal_banner-phone",
+        "href": "https://play.google.com/store/apps/details?id=com.bcp.bo.wallet&referrer=utm_source%3Dp%25C3%25A1gina_web%26utm_medium%3Dp%25C3%25A1gina_web%26utm_term%3Dp%25C3%25A1gina_web%26utm_content%3Dp%25C3%25A1gina_web%26utm_campaign%3Dp%25C3%25A1gina_web"
+    },
+    {
+        "selector": "#descarga_iphone_soliprincipal_banner-phone",
+        "href": "https://apps.apple.com/es/app/soli-pagos-bcp/id1135987447"
+    },
+    {
+        "selector": "#ASFI",
+        "href": "https://www.asfi.gob.bo/"
+    },
+    {
+        "selector": "a[onclick=\"lo_mas_buscado_principal('centro_de_ayuda/soy-nuevo-en-yape/que-es-yape-y-como-funciona/#como-funciona-yape')\"]",
+        "href": "javascript:void(0);",
+        "onclick": "lo_mas_buscado_principal('centro_de_ayuda/soy-nuevo-en-yape/que-es-yape-y-como-funciona/#como-funciona-yape')"
+    },
+    {
+        "selector": "a[onclick=\"lo_mas_buscado_principal('centro_de_ayuda/soy-nuevo-en-yape/necesito-abrir-una-cuenta-de-ahorros-para-tener-yape/#necesito-abrir-una-cuenta-de-ahorros-para-tener-yape')\"]",
+        "href": "javascript:void(0);",
+        "onclick": "lo_mas_buscado_principal('centro_de_ayuda/soy-nuevo-en-yape/necesito-abrir-una-cuenta-de-ahorros-para-tener-yape/#necesito-abrir-una-cuenta-de-ahorros-para-tener-yape')"
+    },
+    {
+        "selector": "a[onclick=\"lo_mas_buscado_principal('centro_de_ayuda/crear-tu-cuenta-yape/porque-no-puedo-crear-mi-cuenta-en-yape/#porque-no-puedo-crear-mi-cuenta-en-yape')\"]",
+        "href": "javascript:void(0);",
+        "onclick": "lo_mas_buscado_principal('centro_de_ayuda/crear-tu-cuenta-yape/porque-no-puedo-crear-mi-cuenta-en-yape/#porque-no-puedo-crear-mi-cuenta-en-yape')"
+    },
+    {
+        "selector": "a[onclick=\"lo_mas_buscado_principal('centro_de_ayuda/crear-tu-cuenta-yape/como-me-creo-mi-cuenta-en-yape/#como-me-creo-mi-cuenta-en-yape')\"]",
+        "href": "javascript:void(0);",
+        "onclick": "lo_mas_buscado_principal('centro_de_ayuda/crear-tu-cuenta-yape/como-me-creo-mi-cuenta-en-yape/#como-me-creo-mi-cuenta-en-yape')"
+    },
+    {
+        "selector": "a[onclick=\"lo_mas_buscado_principal('centro_de_ayuda/sobre-tu-cuenta-yape/cuanto-dinero-puedo-tener-en-yape/#cuanto-dinero-puedo-tener-en-yape')\"]",
+        "href": "javascript:void(0);",
+        "onclick": "lo_mas_buscado_principal('centro_de_ayuda/sobre-tu-cuenta-yape/cuanto-dinero-puedo-tener-en-yape/#cuanto-dinero-puedo-tener-en-yape')"
+    },
+    {
+        "selector": "a[href=\"/centro_de_ayuda/\"]",
+        "href": "/centro_de_ayuda/"
+    }
+]

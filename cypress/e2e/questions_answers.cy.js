@@ -1,6 +1,6 @@
 import {gotoQA, validateQuestionResults} from '../utils/help_center/QA_interactions'
 
-describe('Questions', {tags: ['@critical']}, () => {
+describe('Questions', {tags: ['@regression']}, () => {
     it('Questions answers correctly', () => {
         cy.fixture('questions').then((questions) =>{
             questions.forEach((q) => {

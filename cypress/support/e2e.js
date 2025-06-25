@@ -2,7 +2,7 @@
 //support file default
 Cypress.on('uncaught:exception', (err, runnable) => false)
 
-//implementacion de tags para agrupar test
+//implementacion de tags para agrupar home.css_selector.json
 import registerCypressGrep from '@cypress/grep/src/support'
 registerCypressGrep()
 
